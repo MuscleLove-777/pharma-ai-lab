@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma AI Lab | 製薬×AI×量子コンピューティング</title>
+    <meta name="description" content="製薬業界にAIエージェント・量子コンピューティング・最先端コーディング技術を実装する。現場を知るプロフェッショナルが発信する実践的テックメディア。">
+    <meta name="keywords" content="製薬, AI, AIエージェント, 量子コンピューター, CDISC, SAS, Python, SDTM, 製薬DX">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle canvas background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">⚛</span>
+                <span class="logo-text">Pharma<span class="logo-accent">AI</span>Lab</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                製薬 × テクノロジー 最前線
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">AI・量子技術を</span>
+                <span class="title-line gradient-text">製薬の現場に</span>
+                <span class="title-line">実装する。</span>
+            </h1>
+            <p class="hero-subtitle">
+                AIエージェント、量子コンピューティング、最先端コーディング。<br>
+                テクノロジーの進化を、製薬業界の<strong>実務</strong>に落とし込む。<br>
+                現場10年超のプロが発信する、実践テックメディア。
+            </p>
+            <div class="hero-cta">
+                <a href="#articles" class="btn btn-primary">
+                    <span>記事を読む</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#about" class="btn btn-outline">
+                    <span>詳しく知る</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-suffix">年+</span>
+                    <span class="stat-label">製薬業界経験</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-suffix">領域</span>
+                    <span class="stat-label">AI・量子・コーディング</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="0">0</span><span class="stat-suffix">円</span>
+                    <span class="stat-label">すべて無料公開</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="orbit-system">
+                <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+                <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+                <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+                <div class="core-sphere">
+                    <span>AI</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">EXPERTISE</span>
+                <h2 class="section-title">3つの柱で<span class="gradient-text">業界を変える</span></h2>
+                <p class="section-desc">テクノロジーの力を製薬の現場に届ける。理論ではなく実践。</p>
+            </div>
+            <div class="services-grid">
+                <!-- AI Agent Card -->
+                <div class="service-card" data-tilt>
+                    <div class="card-glow card-glow-purple"></div>
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">AI Agent</h3>
+                    <p class="card-subtitle">AIエージェント</p>
+                    <p class="card-desc">
+                        Claude、GPT、Gemini — AIエージェントが製薬業界の業務をどう変えるか。
+                        SDTM自動化、申請資料のAI品質チェック、コード生成の実践的活用法を解説。
+                    </p>
+                    <ul class="card-tags">
+                        <li>Claude Code</li>
+                        <li>SDTM Automation</li>
+                        <li>プロンプト設計</li>
+                        <li>業務自動化</li>
+                    </ul>
+                    <a href="#" class="card-link">
+                        <span>詳しく見る</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Quantum Computing Card -->
+                <div class="service-card featured" data-tilt>
+                    <div class="card-glow card-glow-cyan"></div>
+                    <div class="card-badge">HOT</div>
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+                            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Quantum Computing</h3>
+                    <p class="card-subtitle">量子コンピューティング</p>
+                    <p class="card-desc">
+                        量子コンピューターが創薬・臨床試験のシミュレーションをどう革新するか。
+                        分子動力学、最適化問題、暗号化 — 製薬業界への影響を現場目線で読み解く。
+                    </p>
+                    <ul class="card-tags">
+                        <li>量子化学計算</li>
+                        <li>創薬シミュレーション</li>
+                        <li>量子機械学習</li>
+                        <li>NISQ時代</li>
+                    </ul>
+                    <a href="#" class="card-link">
+                        <span>詳しく見る</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Coding Card -->
+                <div class="service-card" data-tilt>
+                    <div class="card-glow card-glow-green"></div>
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                            <line x1="14" y1="4" x2="10" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Modern Coding</h3>
+                    <p class="card-subtitle">次世代コーディング</p>
+                    <p class="card-desc">
+                        SASだけの時代は終わった。Python、R、そしてAI支援コーディング。
+                        製薬プログラマーがスキルをアップデートし、市場価値を上げるための実践ガイド。
+                    </p>
+                    <ul class="card-tags">
+                        <li>Python / R</li>
+                        <li>SAS移行戦略</li>
+                        <li>AI Coding</li>
+                        <li>CDISC 対応</li>
+                    </ul>
+                    <a href="#" class="card-link">
+                        <span>詳しく見る</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-card-stack">
+                        <div class="about-floating-card card-sas">
+                            <span class="floating-icon">📊</span>
+                            <span>SAS / CDISC</span>
+                        </div>
+                        <div class="about-floating-card card-ai">
+                            <span class="floating-icon">🤖</span>
+                            <span>AI Agent</span>
+                        </div>
+                        <div class="about-floating-card card-python">
+                            <span class="floating-icon">🐍</span>
+                            <span>Python / R</span>
+                        </div>
+                        <div class="about-floating-card card-quantum">
+                            <span class="floating-icon">⚛️</span>
+                            <span>Quantum</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">ABOUT</span>
+                    <h2 class="section-title">業界を知る人間が<br><span class="gradient-text">技術を語る意味</span></h2>
+                    <p class="about-text">
+                        製薬業界でSAS/CDISCプログラマーとして10年以上。
+                        CRO派遣、SDTM/ADaM開発、電子データ申請、Validation Rule —
+                        この業界の「現場」を知り尽くしたエンジニアが、AI・量子コンピューティング・
+                        最先端のコーディング技術を、<strong>実務に落とし込む</strong>視点で発信します。
+                    </p>
+                    <p class="about-text">
+                        「AIがすごい」は誰でも言える。<br>
+                        <strong>「このAIを、あなたの業務のこの部分で、こう使え」</strong> — それを言えるのは、現場にいる人間だけです。
+                    </p>
+                    <div class="about-skills">
+                        <div class="skill-item">
+                            <div class="skill-bar" data-width="95">
+                                <span class="skill-name">SAS / CDISC (SDTM・ADaM)</span>
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-bar" data-width="85">
+                                <span class="skill-name">AI活用 (Claude / GPT / Gemini)</span>
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-bar" data-width="80">
+                                <span class="skill-name">Python / R</span>
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-bar" data-width="60">
+                                <span class="skill-name">量子コンピューティング</span>
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles" id="articles">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ARTICLES</span>
+                <h2 class="section-title">最新の<span class="gradient-text">記事</span></h2>
+                <p class="section-desc">製薬×テクノロジーの最前線をお届けします</p>
+            </div>
+            <div class="articles-grid">
+                <article class="article-card article-featured">
+                    <div class="article-image">
+                        <div class="article-image-placeholder gradient-bg-1">
+                            <span class="article-emoji">🤖</span>
+                        </div>
+                        <span class="article-category cat-ai">AI Agent</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time>2026.03.20</time>
+                            <span class="article-read">5 min read</span>
+                        </div>
+                        <h3 class="article-title">CROプログラマーがClaude Codeを使ったら、SDTM開発が3倍速くなった話</h3>
+                        <p class="article-excerpt">
+                            AIエージェントを活用したSDTM自動化の実践レポート。
+                            プロンプト設計からValidation Ruleの自動チェックまで、現場で使えるテクニックを公開。
+                        </p>
+                        <a href="#" class="article-link">続きを読む →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-image-placeholder gradient-bg-2">
+                            <span class="article-emoji">⚛️</span>
+                        </div>
+                        <span class="article-category cat-quantum">Quantum</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time>2026.03.18</time>
+                            <span class="article-read">8 min read</span>
+                        </div>
+                        <h3 class="article-title">量子コンピューターが創薬を変える日 — 製薬エンジニアが知るべき5つのこと</h3>
+                        <p class="article-excerpt">
+                            分子シミュレーション、薬物相互作用予測、臨床試験の最適化。量子技術の製薬インパクトを解説。
+                        </p>
+                        <a href="#" class="article-link">続きを読む →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-image-placeholder gradient-bg-3">
+                            <span class="article-emoji">💻</span>
+                        </div>
+                        <span class="article-category cat-coding">Coding</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time>2026.03.15</time>
+                            <span class="article-read">6 min read</span>
+                        </div>
+                        <h3 class="article-title">SASプログラマーが今すぐPythonを始めるべき理由と最短ロードマップ</h3>
+                        <p class="article-excerpt">
+                            SASからPythonへの移行戦略。CDISC対応も含めた、製薬プログラマーの実践ガイド。
+                        </p>
+                        <a href="#" class="article-link">続きを読む →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-image-placeholder gradient-bg-4">
+                            <span class="article-emoji">🧬</span>
+                        </div>
+                        <span class="article-category cat-ai">AI Agent</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time>2026.03.12</time>
+                            <span class="article-read">7 min read</span>
+                        </div>
+                        <h3 class="article-title">AIエージェントに申請資料の品質チェックを任せてみた結果</h3>
+                        <p class="article-excerpt">
+                            Validation Ruleの自動検証をAIエージェントで実装。精度と効率の検証レポート。
+                        </p>
+                        <a href="#" class="article-link">続きを読む →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Newsletter Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-bg-pattern"></div>
+                <div class="cta-content">
+                    <h2 class="cta-title">製薬×AIの最前線を<br><span class="gradient-text">キャッチアップする</span></h2>
+                    <p class="cta-desc">
+                        最新記事の公開通知、業界トレンド、実践的なTipsを配信。<br>
+                        製薬業界のテクノロジー最前線を見逃さない。
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://twitter.com/" target="_blank" class="btn btn-social btn-x">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            <span>X (Twitter) をフォロー</span>
+                        </a>
+                        <a href="https://note.com/" target="_blank" class="btn btn-social btn-note">
+                            <span class="note-icon">📝</span>
+                            <span>note で記事を読む</span>
+                        </a>
+                        <a href="https://youtube.com/" target="_blank" class="btn btn-social btn-youtube">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <span>YouTube チャンネル</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">⚛</span>
+                        <span class="logo-text">Pharma<span class="logo-accent">AI</span>Lab</span>
+                    </a>
+                    <p class="footer-tagline">製薬業界にテクノロジーの力を。</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Contents</h4>
+                    <ul>
+                        <li><a href="#services">AI Agent</a></li>
+                        <li><a href="#services">Quantum Computing</a></li>
+                        <li><a href="#services">Modern Coding</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">X (Twitter)</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">note</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PharmaAILab. All rights reserved.</p>
+                <p class="footer-tech">Built with passion for pharmaceutical innovation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
