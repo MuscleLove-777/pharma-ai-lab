@@ -1,0 +1,12 @@
+# Pharma AI Lab | 製薬×AI×量子コンピューティング
+
+> 製薬業界にAIエージェント・量子コンピューティング・最先端コーディング技術を実装する。現場を知るプロフェッショナルが発信する実践的テックメディア。
+
+## Main Pages
+
+- [pharma ai lab](https://musclelove-777.github.io/pharma-ai-lab/): main page of Pharma AI Lab | 製薬×AI×量子コンピューティング.
+
+## About this file
+
+This llms.txt follows the llmstxt.org proposal and lists the main entry points of this site for LLM-based crawlers and AI search agents.
+Generated automatically from sitemap.xml. Source repository: https://github.com/MuscleLove-777/pharma-ai-lab
